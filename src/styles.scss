@@ -1,7 +1,145 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/foundation-sites/assets/foundation";
+@import "variables";
 
 // @include foundation-grid;
 @include foundation-flex-classes;
 @include foundation-flex-grid;
+
+@font-face {
+  font-family: 'font-almundo';
+  src:  url('#{$icomoon-font-path}/font-almundo.eot?2frv8d');
+  src:  url('#{$icomoon-font-path}/font-almundo.eot?2frv8d#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/font-almundo.ttf?2frv8d') format('truetype'),
+    url('#{$icomoon-font-path}/font-almundo.woff?2frv8d') format('woff'),
+    url('#{$icomoon-font-path}/font-almundo.svg?2frv8d#font-almundo') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'font-almundo' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-logo-almundo .path1 {
+  &:before {
+    content: $icon-logo-almundo-path1;  
+    color: rgb(255, 131, 0);
+    font-size: 80px;
+  }
+}
+.icon-logo-almundo .path2 {
+  &:before {
+    content: $icon-logo-almundo-path2;  
+    margin-left: -4.8369140625em;  
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+  }
+}
+.icon-sheets {
+  &:before {
+    content: $icon-sheets;
+  }
+}
+.icon-separate-bredroom {
+  &:before {
+    content: $icon-separate-bredroom;
+  }
+}
+.icon-safety-box {
+  &:before {
+    content: $icon-safety-box;
+  }
+}
+.icon-restaurant {
+  &:before {
+    content: $icon-restaurant;
+  }
+}
+.icon-nightclub {
+  &:before {
+    content: $icon-nightclub;
+  }
+}
+.icon-newspaper {
+  &:before {
+    content: $icon-newspaper;
+  }
+}
+.icon-kitchen-facilities {
+  &:before {
+    content: $icon-kitchen-facilities;
+  }
+}
+.icon-garden {
+  &:before {
+    content: $icon-garden;
+  }
+}
+.icon-fitness-center {
+  &:before {
+    content: $icon-fitness-center;
+  }
+}
+.icon-deep-soaking-bathtub {
+  &:before {
+    content: $icon-deep-soaking-bathtub;
+  }
+}
+.icon-coffe-maker {
+  &:before {
+    content: $icon-coffe-maker;
+  }
+}
+.icon-children-club {
+  &:before {
+    content: $icon-children-club;
+  }
+}
+.icon-business-center {
+  &:before {
+    content: $icon-business-center;
+  }
+}
+.icon-beach-pool-facilities {
+  &:before {
+    content: $icon-beach-pool-facilities;
+  }
+}
+.icon-beach {
+  &:before {
+    content: $icon-beach;
+  }
+}
+.icon-bathtub {
+  &:before {
+    content: $icon-bathtub;
+  }
+}
+.icon-bathrobes {
+  &:before {
+    content: $icon-bathrobes;
+  }
+}
+.icon-star {
+  &:before {
+    content: $icon-star;
+  }
+}
+.icon-search {
+  &:before {
+    content: $icon-search;
+  }
+}
 

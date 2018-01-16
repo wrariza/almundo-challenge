@@ -1,5 +1,17 @@
-h1{
-    color: red;
-    font-size: 16px;
-    text-align: center;
+@import "../variables";
+
+header{
+  height: 160px;
+  background-color: $header-app;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+
+  .icon-logo-almundo{
+    text-align: center; 
+    margin-top: 35px;
+    margin-left: 10px;
+  }
+  
 }
+
