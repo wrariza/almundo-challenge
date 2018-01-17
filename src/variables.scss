@@ -3,8 +3,18 @@ $icomoon-font-path: "./assets/fonts" !default;
 
 @import '../node_modules/foundation-sites/assets/foundation.scss';
 
-@include foundation-flex-classes;
-@include foundation-flex-grid;
+@include foundation-xy-grid-classes;
+
+@include foundation-xy-grid-classes(
+  $base-grid: true,
+  $margin-grid: true,
+  $padding-grid: true,
+  $block-grid: true,
+  $collapse: true,
+  $offset: true,
+  $vertical-grid: true,
+  $frame-grid: true
+);
 
 $icon-logo-almundo-path1: "\e900";
 $icon-logo-almundo-path2: "\e901";

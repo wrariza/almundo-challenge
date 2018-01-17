@@ -1,16 +1,87 @@
-$magin: 0.625rem;
+$magin-sides: 0.625rem;
+$margin-up-low: 1.875rem 0px 1.875rem 0px;
+$height-item: 34.6875rem;
+$height-img: 12.5rem;
 
 .list{
-  margin: $magin;
-  height: 100%;
+  padding: 10px; 
 }
-
 .item{
-  padding: $magin;
+  padding: 10px;
+  height: $height-item;
   background-color: white;
+  margin: $margin-up-low;
+  border-radius: 3px;
 }
 
-img.item-img{
-  width: auto;
-  height: 24.0625rem;
+.item-img{
+  margin: 0px;
+  height: auto;
+  height: $height-img;
+}
+
+.item-info-general{
+  font-size: 26px;
+  border-bottom: dashed 1px #777777;
+  height: 18.5rem;
+  line-height: 1.5;
+}
+
+.item-info-title{
+  margin-top: 12.5px;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #157AB1;
+  font-weight: bold;
+}
+
+.item-start{
+  color: #FDBA12;
+  font-size: 1.1rem;
+}
+
+.item-amenitie{
+  font-size: 1.1rem;
+  margin: 2px;
+}
+
+.item-price{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.item-price-titel{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #444444;
+}
+
+.item-price-value{  
+  font-size: 2rem;
+  font-weight: bold;
+  color: #DF6800;
+  height: 34px;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+  .item-price-value-coin{
+    font-size: 1.7rem;
+    height: 135px;
+    position: relative;
+    bottom: 2px;
+    left: 3px;
+    font-weight: 400;
+  }
+
+.item-price-btn{
+  background-color: #002C77;
+  height: 40px;
+  border: solid 1px #002C77;
+  width: 100%;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
 }
