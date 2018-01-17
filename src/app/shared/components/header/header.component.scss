@@ -7,7 +7,7 @@ header{
   background-color: $header-app;
   height: 110px;
   
-  @include breakpoint(large) {
+  @include breakpoint(medium large) {
     height:160px;
   }
 }
@@ -21,14 +21,14 @@ header{
   .path1::before{
     font-size: 50px; 
 
-    @include breakpoint(large) {
+    @include breakpoint(medium large) {
       font-size: 80px; 
     }
   }
   .path2::before{
     font-size: 50px;
     
-    @include breakpoint(large) {
+    @include breakpoint(medium large) {
       font-size: 80px; 
     }
   }
