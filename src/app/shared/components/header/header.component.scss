@@ -1,0 +1,36 @@
+@import '~variables.scss';
+
+header{
+  display:flex;
+  flex: 1;
+  align-items: center;
+  background-color: $header-app;
+  height: 110px;
+  overflow-y: hidden;
+
+  @include breakpoint(large) {
+    height:160px;
+  }
+}
+
+.header-logo{
+  text-align: left;
+} 
+
+.header-logo-img{
+  .path1::before{
+    font-size: 50px; 
+
+    @include breakpoint(large) {
+      font-size: 80px; 
+    }
+  }
+  .path2::before{
+    font-size: 50px;
+    
+    @include breakpoint(large) {
+      font-size: 80px; 
+    }
+  }
+} 
+  

@@ -1,4 +1,10 @@
+//Icons apps
 $icomoon-font-path: "./assets/fonts" !default;
+
+@import '../node_modules/foundation-sites/assets/foundation.scss';
+
+@include foundation-flex-classes;
+@include foundation-flex-grid;
 
 $icon-logo-almundo-path1: "\e900";
 $icon-logo-almundo-path2: "\e901";
@@ -22,8 +28,5 @@ $icon-bathrobes: "\e912";
 $icon-star: "\e913";
 $icon-search: "\e914";
 
-
+//Default styles 
 $header-app: #0E3F7D;
-
-
-
