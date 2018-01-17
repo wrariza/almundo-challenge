@@ -1,0 +1,7 @@
+<section class="list">lazy-load-images
+    <section *ngFor="let item of items" class="item" >
+      <img [src]="urlBase+item.image" class="tem-image small-12 medium-4 large-4">
+      {{item.name}}
+    </section>  
+</section>
+

@@ -1,0 +1,16 @@
+$magin: 0.625rem;
+
+.list{
+  margin: $magin;
+  height: 100%;
+}
+
+.item{
+  padding: $magin;
+  background-color: white;
+}
+
+img.item-img{
+  width: auto;
+  height: 24.0625rem;
+}
