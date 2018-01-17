@@ -6,8 +6,7 @@ header{
   align-items: center;
   background-color: $header-app;
   height: 110px;
-  overflow-y: hidden;
-
+  
   @include breakpoint(large) {
     height:160px;
   }
@@ -15,6 +14,7 @@ header{
 
 .header-logo{
   text-align: left;
+  margin-left: 25px;
 } 
 
 .header-logo-img{
