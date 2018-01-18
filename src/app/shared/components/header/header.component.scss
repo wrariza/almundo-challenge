@@ -1,15 +1,10 @@
 @import '~variables.scss';
 
 header{
-  display:flex;
-  flex: 1;
   align-items: center;
+  justify-content: left;
   background-color: $header-app;
-  height: 110px;
-  
-  @include breakpoint(medium large) {
-    height:160px;
-  }
+  height: 100px;
 }
 
 .header-logo{
@@ -20,17 +15,9 @@ header{
 .header-logo-img{
   .path1::before{
     font-size: 50px; 
-
-    @include breakpoint(medium large) {
-      font-size: 80px; 
-    }
   }
   .path2::before{
     font-size: 50px;
-    
-    @include breakpoint(medium large) {
-      font-size: 80px; 
-    }
   }
 } 
   
