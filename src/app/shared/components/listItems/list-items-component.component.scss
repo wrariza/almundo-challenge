@@ -1,35 +1,32 @@
 $magin-sides: 0.625rem;
 $margin-up-low: 1.875rem 0px 1.875rem 0px;
-$height-item: 34.6875rem;
-$height-img: 12.5rem;
+$height-img: 195px;
 
 .list{
   padding: 10px; 
 }
 .item{
   padding: 10px;
-  height: $height-item;
+  height: auto;
   background-color: white;
   margin: $margin-up-low;
   border-radius: 3px;
 }
 
 .item-img{
+  text-indent: -10000px;
   margin: 0px;
-  height: auto;
   height: $height-img;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 200%);
 }
 
 .item-info-general{
   font-size: 26px;
+  padding: 15px 0 30px 0;
   border-bottom: dashed 1px #777777;
-  height: 18.5rem;
-  line-height: 1.5;
 }
 
 .item-info-title{
-  margin-top: 12.5px;
-  margin-bottom: 5px;
   font-size: 1rem;
   color: #157AB1;
   font-weight: bold;
@@ -37,32 +34,29 @@ $height-img: 12.5rem;
 
 .item-start{
   color: #FDBA12;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .item-amenitie{
   font-size: 1.1rem;
-  margin: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 .item-price{
-  height: 100%;
-  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 55px;
   text-align: center;
 }
 
-.item-price-titel{
-  margin-top: 20px;
-  margin-bottom: 20px;
+.item-price-title{
   color: #444444;
 }
 
 .item-price-value{  
-  font-size: 2rem;
+  font-size: 2em;
   font-weight: bold;
   color: #DF6800;
-  height: 34px;
-  margin-bottom: 20px;
   line-height: 1;
 }
 
@@ -78,10 +72,15 @@ $height-img: 12.5rem;
 .item-price-btn{
   background-color: #002C77;
   height: 40px;
+  font-weight: 800;
   border: solid 1px #002C77;
   width: 100%;
   text-align: center;
   color: white;
   border-radius: 5px;
   cursor: pointer;
+
+  &:hover{
+    background-color:#000a77;
+  }
 }

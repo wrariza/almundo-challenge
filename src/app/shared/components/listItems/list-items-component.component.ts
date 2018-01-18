@@ -5,7 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './list-items-component.component.html',
   styleUrls: ['./list-items-component.component.scss']
 })
-export class ListItemsComponentComponent  {
+
+export class ListItemsComponentComponent {
   urlBase:String ='http://localhost:3000/img/hotels/';
   items:any = [
     {
