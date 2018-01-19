@@ -5,17 +5,6 @@ $icomoon-font-path: "./assets/fonts" !default;
 
 @include foundation-xy-grid-classes;
 
-@include foundation-xy-grid-classes(
-  $base-grid: true,
-  $margin-grid: true,
-  $padding-grid: true,
-  $block-grid: true,
-  $collapse: true,
-  $offset: true,
-  $vertical-grid: true,
-  $frame-grid: true
-);
-
 $icon-logo-almundo-path1: "\e900";
 $icon-logo-almundo-path2: "\e901";
 $icon-sheets: "\e902";

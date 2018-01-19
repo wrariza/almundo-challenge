@@ -1,14 +1,14 @@
 <section class="list">
-    <section *ngFor="let item of items" class="cell small-12 flex-container flex-dir-column large-flex-dir-row item" lazy-load-images>
-        <img [attr.data-src]="urlBase+item.image" class="small-12 medium-5 large-5 item-img" >
-        <article class="small-12 medium-4 large-4  item-info-general">
+    <section *ngFor="let item of items" class="cell flex-container flex-dir-column large-flex-dir-row item" lazy-load-images>
+        <img [attr.data-src]="urlBase+item.image" class="small-12 medium-12 large-auto item-img" >
+        <article class="small-12 medium-12 large-auto  item-info-general">
           <h2 class="item-info-title">{{item.name}}</h2>
           <div class="icon-star item-start"></div>
           <span *ngFor="let amenitie of item.amenities" class="item-amenitie">
               <span class="icon-{{amenitie}}"></span>
           </span>
         </article>
-        <article class="align-center-middle text-center small-12 medium-4 large-4  item-price">
+        <article class="align-center-middle text-center small-12 medium-12 large-auto item-price">
           <p class="item-price-title ">Precio por noche por habitación</p>
           <p class="cell item-price-value">
             <span class="item-price-value-coin">ARS</span> <span class="item-price-value-price">
