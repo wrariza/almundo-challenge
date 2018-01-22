@@ -65,7 +65,7 @@
     font-size: 0.9rem;
 
     @include breakpoint(large) {
-        width: calc(100% - 100px);
+        width: calc(100% - 150px);
         margin: 0px;
         display: initial;
         margin-right: 15px;

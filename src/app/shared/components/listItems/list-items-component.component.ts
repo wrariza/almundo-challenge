@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HotelsService } from '../../services/hotels.services';
 import { Hotel } from "../../models/hotel.model";
+import { environment } from '../../../../environments/environment';
 
 @Component({
   selector: 'app-listItems',
@@ -12,8 +13,9 @@ export class ListItemsComponentComponent implements OnInit{
 
   constructor(private itemsServices: HotelsService){}
   
+  URLBASEIMG:string = environment.apiUrlPublicImgHotels;
   items: Hotel[];
-  loading = true;
+  loading = true; 
 
   ngOnInit(){ 
     this.itemsServices

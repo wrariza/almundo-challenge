@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "concurrently -r \"npm run lint:server\" \"npm run lint:client\"",
     "e2e": "ng e2e",
-    "start:server": "set NODE_ENV=development & set DEBUG=almundo-challenge* nodemon server/app.js --exec babel-node",
+    "start:server": "cross-env NODE_ENV=development & cross-env DEBUG=almundo-challenge* nodemon server/app.js --exec babel-node",
     "start:client": "ng serve",
     "lint:client": "ng lint",
     "lint:server": "standard 'server/**/*.js' --verbose | snazzy "
@@ -45,6 +45,7 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "codelyzer": "^4.0.1",
+    "cross-env": "^5.1.3",
     "jasmine-core": "~2.8.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~2.0.0",

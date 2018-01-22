@@ -12,14 +12,15 @@ const app = express()
 
 if (process.env.NODE_ENV === 'development') {
   app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', '*')
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8888')
     res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Request-With, Content-Type, Accept')
-    res.setHeader('Access-Control-Allow-Methods', 'POST, GET, PATCH, DELETE, OPTIONS')
+    res.setHeader('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token')
+    res.setHeader('Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS')
     next()
   })
 }
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3001
 
 app.get('/', (req, res) => {
   res.send('Run server almundo')
