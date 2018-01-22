@@ -9,6 +9,16 @@ import { hotels } from './routes/'
 const debug = new Debug('almundo:root')
 
 const app = express()
+
+if (process.env.NODE_ENV === 'development') {
+  app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*')
+    res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Request-With, Content-Type, Accept')
+    res.setHeader('Access-Control-Allow-Methods', 'POST, GET, PATCH, DELETE, OPTIONS')
+    next()
+  })
+}
+
 const PORT = process.env.PORT || 3000
 
 app.get('/', (req, res) => {
