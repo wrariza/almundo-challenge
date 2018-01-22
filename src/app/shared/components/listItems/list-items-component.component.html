@@ -3,7 +3,7 @@
         <img [attr.data-src]="urlBase+item.image" class="small-12 medium-12 large-auto item-img" >
         <article class="small-12 medium-12 large-auto  item-info-general">
           <h2 class="item-info-title">{{item.name}}</h2>
-          <div class="icon-star item-start"></div>
+          <app-stars class="item-start" [numberStart]="item.stars"></app-stars>
           <span *ngFor="let amenitie of item.amenities" class="item-amenitie">
               <span class="icon-{{amenitie}}"></span>
           </span>
