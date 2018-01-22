@@ -31,7 +31,8 @@ $height-img: 195px;
   padding: 10px;
   
   @include breakpoint(large) {
-    padding: 25px; 
+    padding:0px 25px; 
+    
   }
 
 }
