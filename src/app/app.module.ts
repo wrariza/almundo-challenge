@@ -7,6 +7,7 @@ import { LazyLoadImagesModule } from 'ngx-lazy-load-images';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { ListItemsComponentComponent } from './shared/components/listItems/list-items-component.component';
+import { FilterComponent } from './shared/components/filter/filter.component';
 
 const AppRoutes = [
   { 
@@ -23,7 +24,8 @@ const AppRoutes = [
   declarations: [
     AppComponent,
       HeaderComponent,
-      ListItemsComponentComponent
+      ListItemsComponentComponent,
+      FilterComponent,
   ],
   imports: [
     BrowserModule,

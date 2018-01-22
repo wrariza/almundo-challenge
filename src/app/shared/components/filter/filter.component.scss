@@ -1,0 +1,125 @@
+@import '~variables.scss';
+
+.filters{
+    height: 100%;
+    background-color: #F4F4F4;
+    margin-bottom: 15.75px;
+    
+    @include breakpoint(large) {
+        margin: 25px;
+        text-align: left;
+    }
+}
+
+.filter-header{
+    height: 40px;
+    background-color: white;
+    text-align: center;
+    color: #157AB1;
+    line-height: 2rem;
+
+    @include breakpoint(large) {
+        color: black;
+        text-align: left;
+        padding-left: 15px;
+    }
+}
+
+.filter-header-title{
+    display: inline;
+    margin-right: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 40px;
+}
+
+.filter{
+    background-color: white;
+    margin: 15.75px 0px;
+    padding: 15.75px;
+    margin: 5px 0px;
+    font-weight: 900;
+    color: #157AB1;
+    font-size: 1rem;
+}
+
+.filter-name{
+    padding-bottom: 5px;
+    display: inline-block;
+    width: 100%;
+}
+
+.filter-name label{
+    font-weight: 900;
+    color: #157AB1;
+    font-size: 1rem;
+    line-height: 0px;
+    margin-bottom: 20px;
+}
+
+.filter-name-input{
+    height: 30px;
+    margin: 15px 0px;
+    padding-bottom: 5px;
+    font-size: 0.9rem;
+
+    @include breakpoint(large) {
+        width: calc(100% - 100px);
+        margin: 0px;
+        display: initial;
+        margin-right: 15px;
+        margin-bottom: 5px;
+    }
+}
+
+.filter-name-button{
+    background-color: #002C77;
+    color: white;
+    height: 30px;
+    width: 100%;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #000a77;
+    }
+
+    @include breakpoint(large) {
+        width: 30%;
+    }
+} 
+
+.filter-start-icon{
+    margin-right: 10px;
+}
+
+.filter-triangle{
+    float: right;
+    cursor: pointer;
+}
+
+.filter-starts-fieldset legend{
+    line-height: 12px;
+    width: 100%;
+    margin-bottom: 27px;
+}
+
+.filter-starts-fieldset label{
+    display: inline-block;
+    width: calc(100% - 45px);
+    color: #FDBA12;
+}
+
+.filter_closet{
+    display : none;
+
+    @include breakpoint(large) {
+        display : block;
+    }    
+}
+
+.filter-starts-fieldset label.filter-start-label--allStars{
+    color: black;
+    font-weight: bold;
+}
+

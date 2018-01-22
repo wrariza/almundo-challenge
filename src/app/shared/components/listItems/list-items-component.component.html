@@ -1,5 +1,5 @@
 <section class="list">
-    <section *ngFor="let item of items" class="cell flex-container flex-dir-column large-flex-dir-row item list-item-load" lazy-load-images>
+    <section *ngFor="let item of items" class="cell flex-container flex-dir-column large-flex-dir-row item" lazy-load-images>
         <img [attr.data-src]="urlBase+item.image" class="small-12 medium-12 large-auto item-img" >
         <article class="small-12 medium-12 large-auto  item-info-general">
           <h2 class="item-info-title">{{item.name}}</h2>

@@ -5,6 +5,8 @@ $icomoon-font-path: "./assets/fonts" !default;
 
 @include foundation-xy-grid-classes;
 
+$icon-triangle-up: "\e915";
+$icon-triangle-down: "\e916";
 $icon-logo-almundo-path1: "\e900";
 $icon-logo-almundo-path2: "\e901";
 $icon-sheets: "\e902";

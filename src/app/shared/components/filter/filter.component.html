@@ -1,0 +1,54 @@
+<aside class="filters">
+  <form>
+      <header class="filter-header ">
+          <h2 class="filter-header-title">filtros</h2>
+          <span class="icon-triangle-down hide-for-large"></span>
+      </header>
+      <section class="filter filter-name">
+        <label for="nameHotel"><span class="icon-search filter-start-icon"></span>Nombre de hotel<span class="icon-triangle-up filter-triangle"></span>  
+        </label>
+        <input type="text" class="filter-name-input" name="nameHotel" placeholder="Ingrese el nombre del hotel">
+        <button class="filter-name-button">Aceptar</button>   
+      </section>
+      <section class="filter filter-starts">
+        <fieldset class="filter-starts-fieldset">
+          <legend class="">
+              <span class="icon-star filter-start-icon"></span>Extrellas
+              <span class="icon-triangle-up filter-triangle"></span>
+          </legend>  
+            <input type="checkbox" name="stars" id="allStars" value="-1" />
+            <label for="allStars" class="filter-start-label--allStars">Todas las extrellas</label>
+            <input type="checkbox" name="stars" id="fiveStars"  value="5" />
+            <label for="fiveStars">
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+            </label>
+            <input type="checkbox" name="stars" id="fourStars" value="4" />
+            <label for="fourStars">
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+            </label>
+            <input type="checkbox" name="stars" id="threeStars" value="3" />
+            <label for="threeStars">
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+            </label>
+            <input type="checkbox" name="stars" id="twoStars" value="2" />
+            <label for="twoStars">
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+            </label>
+            <input type="checkbox" name="stars" id="oneStar" value="1" />
+            <label for="oneStar">
+                <span class="icon-star"></span>
+            </label>
+        </fieldset>
+      </section>
+    </form>
+</aside>

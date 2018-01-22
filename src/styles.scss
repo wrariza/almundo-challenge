@@ -38,6 +38,17 @@ body{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+  .icon-triangle-up {
+    &:before {
+      content: $icon-triangle-up;
+    }
+  }
+  .icon-triangle-down {
+    &:before {
+      content: $icon-triangle-down;
+    }
+  }
   
   .icon-logo-almundo .path1 {
     &:before {
