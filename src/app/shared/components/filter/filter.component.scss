@@ -6,7 +6,7 @@
     margin-bottom: 15.75px;
     
     @include breakpoint(large) {
-        margin: 25px;
+        margin: 25px 0px 0px 20px;
         text-align: left;
     }
 }
@@ -65,7 +65,7 @@
     font-size: 0.9rem;
 
     @include breakpoint(large) {
-        width: calc(100% - 150px);
+        width: calc(100% - 95px);
         margin: 0px;
         display: initial;
         margin-right: 15px;
@@ -85,7 +85,8 @@
     }
 
     @include breakpoint(large) {
-        width: 30%;
+        width: 70px;
+        float: right;
     }
 } 
 

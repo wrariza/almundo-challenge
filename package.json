@@ -9,7 +9,7 @@
     "lint": "concurrently -r \"npm run lint:server\" \"npm run lint:client\"",
     "e2e": "ng e2e",
     "start:server": "cross-env NODE_ENV=development & cross-env DEBUG=almundo-challenge* nodemon server/app.js --exec babel-node",
-    "start:client": "ng serve",
+    "start:client": "ng serve -o",
     "lint:client": "ng lint",
     "lint:server": "standard 'server/**/*.js' --verbose | snazzy "
   },
