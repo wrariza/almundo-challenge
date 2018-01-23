@@ -7,7 +7,18 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./filter.component.scss']
 })
 export class FilterComponent implements OnInit {
-  public statesStars:Object = 
+  public toShowFilters = false;
+  public toShowName = true;
+  public toShowStars = true;
+  
+  public MSG:object = {
+    title_filter: 'filtros',
+    filer_hotel_placeholder: 'Ingrese el nombre del hotel',
+    filer_hotel_title: 'Nombre de hotel',
+    filer_stars_title: 'Estrellas',
+  }
+
+  public statesStars:object = 
   {
       "starsFive": false,
       "starsFour": false,
@@ -17,10 +28,7 @@ export class FilterComponent implements OnInit {
       "starts": true 
   }
   
-  public toShowFilters = false;
-  public toShowName = true;
-  public toShowStars = true;
-  
+
   constructor() { }
 
   search( f:NgForm ) {

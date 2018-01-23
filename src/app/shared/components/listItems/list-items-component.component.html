@@ -1,8 +1,14 @@
 <app-loading *ngIf="loading"></app-loading>
 <div *ngIf="!loading">
     <section class="list">
-            <section *ngFor="let item of items" class="cell flex-container flex-dir-column large-flex-dir-row item" lazy-load-images>
-                <img [attr.data-src]="URLBASEIMG+item.image"  alt="{{item.name}}"  class="small-12 medium-12 large-auto item-img" >
+        <section 
+            *ngFor="let item of items" 
+            class="cell flex-container flex-dir-column large-flex-dir-row item" 
+            lazy-load-images >
+                <img 
+                    [attr.data-src]="URLBASEIMG+item.image"  
+                    alt="{{item.name}}"  
+                    class="small-12 medium-12 large-auto item-img" >
                 <article class="small-12 medium-12 large-auto  item-info-general">
                     <h2 class="item-info-title">{{item.name}}</h2>
                     <app-stars class="item-start" [numberStart]="item.stars"></app-stars>
@@ -11,18 +17,24 @@
                     </span>
                 </article>
                 <article class="align-center-middle text-center small-12 medium-12 large-auto item-price">
-                    <p class="item-price-title ">Precio por noche por habitación</p>
+                    <p class="item-price-title ">{{MSG.price_label}}</p>
                     <p class="cell item-price-value">
-                    <span class="item-price-value-coin">ARS</span> <span class="item-price-value-price">
+                    <span class="item-price-value-coin">
+                        {{MSG.symbole_price}}
+                    </span> 
+                    <span class="item-price-value-price">
                         {{ item.price | number: '1.0-0' }}
                     </span>
                     </p>
-                    <button class="small-12" type="buttom" name="viewHotel" class="item-price-btn">
-                        Ver hotel
+                    <button 
+                        class="small-12" 
+                        type="buttom" name="viewHotel" 
+                        class="item-price-btn" >
+                        {{ MSG.label_btn }}
                     </button>
                 </article>
             </section> 
-        </section>            
+    </section>            
 </div>
  
 

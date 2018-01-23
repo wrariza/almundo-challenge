@@ -12,6 +12,12 @@ import { environment } from '../../../../environments/environment';
 export class ListItemsComponentComponent implements OnInit{
 
   constructor(private itemsServices: HotelsService){}
+
+  public MSG:object = {
+    'price_label': 'Precio por noche por habitación',
+    'symbole_price': 'ARS',
+    'label_btn': 'Ver hotel'
+  }
   
   URLBASEIMG:string = environment.apiUrlPublicImgHotels;
   items: Hotel[];

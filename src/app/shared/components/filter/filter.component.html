@@ -1,30 +1,48 @@
 <aside class="filters">
     <form (ngSubmit)="search(f)" #f="ngForm"  novalidate="">
       <header class="filter-header ">
-          <h2 class="filter-header-title">filtros</h2>
-          <span (click)="closetAndOpenFilters(event)" [ngClass]="{'icon-triangle-up': toShowFilters === true, 'icon-triangle-down': toShowFilters === false }"  class="icon-triangle-down hide-for-large"></span>
+          <h2 class="filter-header-title">{{MSG.title_filter}}</h2>
+          <span 
+            (click)="closetAndOpenFilters(event)" 
+            [ngClass]="{'icon-triangle-up': toShowFilters === true, 'icon-triangle-down': toShowFilters === false }"  
+            class="icon-triangle-down hide-for-large">
+        </span>
       </header>
-      <section [ngClass]="{'hide-for-small-only': toShowFilters === false }" class="filter filter-name ">
+      <section 
+            [ngClass]="{'hide-for-small-only': toShowFilters === false }"
+            class="filter filter-name ">
         <label for="nameHotel"><span class="icon-search filter-start-icon"></span>
-            Nombre de hotel
-        <span (click)="closetAndOpenName (event)" [ngClass]="{'icon-triangle-up': toShowName === true, 'icon-triangle-down': toShowName === false }" class="filter-triangle"></span>  
+            {{MSG.filer_hotel_title}}
+        <span 
+            (click)="closetAndOpenName (event)"
+            [ngClass]="{'icon-triangle-up': toShowName === true, 'icon-triangle-down': toShowName === false }" 
+            class="filter-triangle">
+        </span>  
         </label>
         <fieldset *ngIf="toShowName">
                 <input 
                     type="text" ngModel 
                     class="filter-name-input" 
                     name="nameHotel" 
-                    placeholder="Ingrese el nombre del hotel">
+                    placeholder="{{MSG.filer_hotel_placeholder}}">
                 <button type="submit"  class="filter-name-button">Aceptar</button>
         </fieldset>
       </section>
-      <section [ngClass]="{'hide-for-small-only': toShowFilters === false }" class="filter filter-starts">
+      <section 
+        [ngClass]="{'hide-for-small-only': toShowFilters === false }" 
+        class="filter filter-starts">
         <legend >
             <span class="icon-star filter-start-icon"></span>
-            Estrellas
-            <span (click)="closetAndOpenStars(event)" [ngClass]="{'icon-triangle-up': toShowStars === true, 'icon-triangle-down': toShowStars === false }" class="filter-triangle"></span>
+            {{MSG.filer_stars_title}}
+            <span 
+                (click)="closetAndOpenStars(event)" 
+                [ngClass]="{'icon-triangle-up': toShowStars === true, 'icon-triangle-down': toShowStars === false }" 
+                class="filter-triangle">
+            </span>
         </legend>  
-        <fieldset *ngIf="toShowStars" class="filter-starts-fieldset">
+        <fieldset 
+            *ngIf="toShowStars" 
+            class="filter-starts-fieldset">
             <input 
                 type="checkbox" 
                 [(ngModel)]="statesStars.starts" 
@@ -56,7 +74,8 @@
             <label for="fourStars">
                     <app-stars class="item-start" [numberStart]="4"></app-stars>
             </label>
-            <input type="checkbox" 
+            <input 
+                type="checkbox" 
                 [(ngModel)]="statesStars.starsThree" (click)="search(f)" 
                 name="starsThree" 
                 id="threeStars" 
@@ -65,7 +84,8 @@
             <label for="threeStars">
                     <app-stars class="item-start" [numberStart]="3"></app-stars>
             </label>
-            <input type="checkbox" 
+            <input 
+                type="checkbox" 
                 [(ngModel)]="statesStars.starsTwo" (click)="search(f)" 
                 name="starsTwo" id="twoStars" 
                 value="2" 
@@ -73,7 +93,8 @@
             <label for="twoStars">
                     <app-stars class="item-start" [numberStart]="2"></app-stars>
             </label>
-            <input type="checkbox" 
+            <input
+                type="checkbox" 
                 [(ngModel)]="statesStars.starsOne" (click)="search(f)" 
                 name="starsOne" 
                 id="oneStar" 
