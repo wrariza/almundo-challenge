@@ -18,8 +18,8 @@ export class HotelsService implements IHotels {
     this.hotelsUrl = urljoin(environment.apiUrl, 'hotels');
   }
 
-  findHotels(query): Promise<void | Hotel[]> {
-    const URL = urljoin(this.hotelsUrl, query);
+  findHotels(filter: string): Promise<void | Hotel[]> {
+    const URL = urljoin(this.hotelsUrl, filter);
     
     return this.http.get(URL)
               .toPromise()

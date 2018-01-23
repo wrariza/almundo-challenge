@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { HotelsService } from '../../services/hotels.services';
 import { Hotel } from "../../models/hotel.model";
 import { environment } from '../../../../environments/environment';
@@ -15,11 +15,11 @@ export class ListItemsComponentComponent implements OnInit{
   
   URLBASEIMG:string = environment.apiUrlPublicImgHotels;
   items: Hotel[];
-  loading = true; 
-
+  loading = true;
+  
   ngOnInit(){ 
     this.itemsServices
-      .findHotels('')
+      .findHotels("?name=asds")
       .then((holtels: Hotel[]) => {
         this.items = holtels;
         this.loading = false

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes } from '@angular/router';
+import { FormsModule }   from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { Router,  RouterModule } from '@angular/router';
 import { HttpModule } from '@angular/http';
@@ -39,6 +40,7 @@ const AppRoutes = [
     BrowserModule,
       LazyLoadImagesModule,
       RouterModule.forRoot(AppRoutes),
+      FormsModule,
       HttpModule
   ],
   providers: [HotelsService],
