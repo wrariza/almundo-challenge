@@ -45,9 +45,9 @@
             class="filter-starts-fieldset">
             <input 
                 type="checkbox" 
-                [(ngModel)]="statesStars.starts" 
-                (click)="search(f)" 
-                name="starts" id="allStars" 
+                [(ngModel)]="statesStars.all" 
+                (change)="onChance(f)"
+                name="all" id="allStars" 
                 value="-1" 
             />
             <label 
@@ -55,9 +55,9 @@
                 class="filter-start-label--allStars">Todas las estrellas</label>
             <input 
                 type="checkbox" 
-                [(ngModel)]="statesStars.starsFive" 
-                (click)="search(f)" 
-                name="starsFive" 
+                [(ngModel)]="statesStars.five" 
+                (change)="onChance(f)"
+                name="five" 
                 id="fiveStars"  
                 value="5" 
             />
@@ -66,8 +66,9 @@
             </label>
             <input 
                 type="checkbox" 
-                [(ngModel)]="statesStars.starsFour" (click)="search(f)" 
-                name="starsFour" 
+                [(ngModel)]="statesStars.four" 
+                (change)="onChance(f)"
+                name="four" 
                 id="fourStars" 
                 value="4" 
             />
@@ -76,8 +77,9 @@
             </label>
             <input 
                 type="checkbox" 
-                [(ngModel)]="statesStars.starsThree" (click)="search(f)" 
-                name="starsThree" 
+                [(ngModel)]="statesStars.three" 
+                (change)="onChance(f)"
+                name="three" 
                 id="threeStars" 
                 value="3" 
             />
@@ -86,8 +88,9 @@
             </label>
             <input 
                 type="checkbox" 
-                [(ngModel)]="statesStars.starsTwo" (click)="search(f)" 
-                name="starsTwo" id="twoStars" 
+                [(ngModel)]="statesStars.two" 
+                (change)="onChance(f)"
+                name="two" id="twoStars" 
                 value="2" 
             />
             <label for="twoStars">
@@ -95,8 +98,9 @@
             </label>
             <input
                 type="checkbox" 
-                [(ngModel)]="statesStars.starsOne" (click)="search(f)" 
-                name="starsOne" 
+                [(ngModel)]="statesStars.one" 
+                (change)="onChance(f)"
+                name="one" 
                 id="oneStar" 
                 value="1" 
             />
