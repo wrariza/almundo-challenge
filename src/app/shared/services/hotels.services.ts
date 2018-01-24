@@ -1,7 +1,7 @@
 import { Inject, Injectable } from "@angular/core";
 import { Http } from "@angular/http";
+import urlJoin from 'proper-url-join';
 
-import urljoin = require('url-join');
 import 'rxjs/add/operator/toPromise';
 
 import { environment } from '../../../environments/environment';
@@ -15,16 +15,17 @@ export class HotelsService implements IHotels {
   private hotelsUrl: string;
 
   constructor(private http: Http) {
-    this.hotelsUrl = urljoin(environment.apiUrl, 'hotels');
+    console.log(urlJoin)
+    this.hotelsUrl = urlJoin(environment.apiUrl, 'hotels');
   }
 
   findHotels(filter: string): Promise<void | Hotel[]> {
-    const URL = urljoin(this.hotelsUrl, filter);
+    const URL = urlJoin(this.hotelsUrl, filter);
     
     return this.http.get(URL)
-              .toPromise()
-              .then(response => response.json() as Hotel[])
-              .catch(this.handleError);
+      .toPromise()
+      .then(response => response.json() as Hotel[])
+      .catch(this.handleError);
   }
 
   handleError(error:any) {
