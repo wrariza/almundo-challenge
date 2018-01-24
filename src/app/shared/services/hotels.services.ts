@@ -6,7 +6,7 @@ import 'rxjs/add/operator/toPromise';
 
 import { environment } from '../../../environments/environment';
 import { IHotels } from "../interfaces/hotels.interface";
-import { Hotel } from "../Models/Hotel.model";
+import { Hotel } from "../Models/hotel.model";
 
 
 @Injectable()
