@@ -18,30 +18,25 @@ export class FilterComponent implements OnInit {
     filer_stars_title: 'Estrellas',
   }
 
-  public statesStars:object = 
-  {
-      "starsFive": false,
-      "starsFour": false,
-      "starsThree": false,
-      "starsOne": false,
-      "starsTwo": false,
-      "starts": true 
+  public statesStars = {
+      five: false,
+      four: false,
+      three: false,
+      two: false,
+      one: false,
+      all: true 
   }
   
+  constructor() {}
 
-  constructor() { }
 
-  search( f:NgForm ) {
-    let values = f.value;
-    console.log(f, f.value)
-    if(values.allStars){ 
-      this.selectAllStars(f) 
-    }else{
-    } 
-  }
-
-  selectAllStars(f:NgForm){
-    console.log(f)
+  onChance( f:NgForm ) {  
+      if(this.statesStars.five || this.statesStars.four || this.statesStars.three ||
+        this.statesStars.two || this.statesStars.one ){
+          f.form.controls.all.setValue(false);
+      }else{
+        f.form.controls.all.setValue(true);
+      }
   }
 
   closetAndOpenFilters(){
