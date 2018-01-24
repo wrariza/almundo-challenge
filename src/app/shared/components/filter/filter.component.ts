@@ -29,13 +29,17 @@ export class FilterComponent implements OnInit {
   
   constructor() {}
 
-
+  search(f:NgForm){
+    console.log(f.value); 
+  }
+ 
   onChance( f:NgForm ) {  
+
       if(this.statesStars.five || this.statesStars.four || this.statesStars.three ||
         this.statesStars.two || this.statesStars.one ){
           f.form.controls.all.setValue(false);
       }else{
-        f.form.controls.all.setValue(true);
+          f.form.controls.all.setValue(true);
       }
   }
 
