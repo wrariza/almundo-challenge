@@ -16,7 +16,9 @@ if (process.env.NODE_ENV === 'development') {
 
 const PORT = process.env.PORT || 3001
 
-app.use(express.static(path.join(process.cwd(), 'dist')))
+if (process.env.NODE_ENV === 'production') {
+  app.use('/', express.static(path.join(process.cwd(), 'dist')))
+}
 
 app.use('/img', express.static(path.join(__dirname, 'public/images')));
 app.use('/api', hotels)

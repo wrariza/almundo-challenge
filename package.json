@@ -5,8 +5,8 @@
   "scripts": {
     "start": "concurrently -r \"npm run start:server\" \"npm run start:client\"",
     "start-prod": "cross-env NODE_ENV=production node server.js",
-    "start:server": "cross-env NODE_ENV=development & cross-env DEBUG=almundo-challenge* nodemon server/app.js --exec babel-node",
-    "start:client": "ng serve --aot -o",
+    "start:server": "cross-env NODE_ENV=development DEBUG=almundo-challenge* nodemon server/app.js --exec babel-node",
+    "start:client": "ng serve -o",
     "build": "npm run build:client && npm run build:server",
     "build:client": "ng build --aot -prod",
     "build:server": "npx babel server --out-dir dist/server --copy-files && npx babel server --out-dir dist/server",

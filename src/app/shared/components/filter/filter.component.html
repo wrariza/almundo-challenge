@@ -3,7 +3,7 @@
       <header class="filter-header ">
           <h2 class="filter-header-title">{{MSG.title_filter}}</h2>
           <span 
-            (click)="closetAndOpenFilters(event)" 
+            (click)="closetAndOpenFilters()" 
             [ngClass]="{'icon-triangle-up': toShowFilters === true, 'icon-triangle-down': toShowFilters === false }"  
             class="icon-triangle-down hide-for-large">
         </span>
@@ -14,7 +14,7 @@
         <label for="nameHotel"><span class="icon-search filter-start-icon"></span>
             {{MSG.filer_hotel_title}}
         <span 
-            (click)="closetAndOpenName (event)"
+            (click)="closetAndOpenName()"
             [ngClass]="{'icon-triangle-up': toShowName === true, 'icon-triangle-down': toShowName === false }" 
             class="filter-triangle">
         </span>  
@@ -35,7 +35,7 @@
             <span class="icon-star filter-start-icon"></span>
             {{MSG.filer_stars_title}}
             <span 
-                (click)="closetAndOpenStars(event)" 
+                (click)="closetAndOpenStars()" 
                 [ngClass]="{'icon-triangle-up': toShowStars === true, 'icon-triangle-down': toShowStars === false }" 
                 class="filter-triangle">
             </span>

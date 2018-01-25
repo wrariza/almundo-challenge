@@ -11,11 +11,11 @@ export class FilterComponent implements OnInit {
   public toShowName = true;
   public toShowStars = true;
   
-  public MSG:object = {
-    title_filter: 'filtros',
-    filer_hotel_placeholder: 'Ingrese el nombre del hotel',
-    filer_hotel_title: 'Nombre de hotel',
-    filer_stars_title: 'Estrellas',
+  public MSG = {
+    'title_filter': 'filtros',
+    'filer_hotel_placeholder': 'Ingrese el nombre del hotel',
+    'filer_hotel_title': 'Nombre de hotel',
+    'filer_stars_title': 'Estrellas',
   }
 
   public statesStars = {
