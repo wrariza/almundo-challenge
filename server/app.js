@@ -16,11 +16,9 @@ if (process.env.NODE_ENV === 'development') {
 
 const PORT = process.env.PORT || 3001
 
-app.get('/', (req, res) => {
-  res.send('Run server almundo')
-})
-
 if (process.env.NODE_ENV === 'production') {
+  // Serve only the static files form the dist directory
+  app.use(express.static(path.resolve(__dirname, '/dist')))
   app.use(express.static(path.join(process.cwd(), 'dist')))
 }
 
