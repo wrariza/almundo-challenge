@@ -10,9 +10,7 @@ const debug = new Debug('almundo:root')
 
 const app = express()
 
-if (process.env.NODE_ENV === 'development') {
-  app.use(cors({origin: '*'}))
-}
+app.use(cors({origin: '*'}))
 
 const PORT = process.env.PORT || 3001
 
