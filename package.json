@@ -9,7 +9,7 @@
     "start:client": "ng serve -o",
     "build": "npm run build:client && npm run build:server",
     "build:client": "ng build --environment=prod",
-    "build:server": "babel server --out-dir dist/server",
+    "build:server": "npx babel server --out-dir dist/server --copy-files && npx babel server --out-dir dist/server",
     "postinstall": "npm run build",
     "test": "ng test",
     "e2e": "ng e2e",
