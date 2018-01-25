@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "start": "concurrently -r \"npm run start:server\" \"npm run start:client\"",
-    "start:prod": "cross-env NODE_ENV=production node server.js",
+    "start-prod": "cross-env NODE_ENV=production node server.js",
     "start:server": "cross-env NODE_ENV=development & cross-env DEBUG=almundo-challenge* nodemon server/app.js --exec babel-node",
     "start:client": "ng serve --aot -o",
     "build": "npm run build:client && npm run build:server",
