@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  apiUrl: 'http://localhost:3001/api/',
-  apiUrlPublicImgHotels: 'http://localhost:3001/img/hotels/'
+  apiUrl: 'https://almundo-challenge.herokuapp.com/api/',
+  apiUrlPublicImgHotels: 'https://almundo-challenge.herokuapp.com/img/hotels/'
 };
