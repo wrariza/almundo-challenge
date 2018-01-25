@@ -7,6 +7,7 @@ import { HttpModule } from '@angular/http';
 import { LazyLoadImagesModule } from 'ngx-lazy-load-images';
 
 import { HotelsService } from './shared/services/hotels.services';
+import { FilterService } from './shared/services/filter.services';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/components/header/header.component';
@@ -43,7 +44,10 @@ const AppRoutes = [
       FormsModule,
       HttpModule
   ],
-  providers: [HotelsService],
+  providers: [
+    HotelsService,
+    FilterService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
