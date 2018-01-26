@@ -1,9 +1,5 @@
 # Almundo challenge
 
-
-![almundo](https://drive.google.com/file/d/12YVOuUzg5lngJe9mw-tTtmRw8YRITWVL/view?usp=sharing)
-![almundo-cel](https://drive.google.com/file/d/1Hwd3dQEH-XdF4G55upjrO2ymybx1uhEz/view?usp=sharing)
-
 ### Installation
 
 gti clone https://github.com/wrariza/almundo-challenge.git 
