@@ -1,27 +1,46 @@
-# AlmundoChallenge
+# Almundo challenge
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.4.
+### Installation
 
-## Development server
+gti clone https://github.com/wrariza/almundo-challenge.git 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Instale las dependencias y devDependencies e inicie el servidor.
 
-## Code scaffolding
+```sh
+$ cd almundo-challenge
+$ npm install
+$ npm start
+Verifique la implementación navegando a la dirección de su servidor en su navegador preferido.
+Aplicación web $ http://localhost:4200 || 127.0.0.1:4200
+Servidor node api http://localhost:3100 || 127.0.0.1:3100
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Para entornos de producción ...
 
-## Build
+```sh
+$ npm install
+$ npm run build
+$ npm run start-prod
+```
+##Deploy Heroku 
+https://devcenter.heroku.com/articles/git
+### Demo
+Publicacion en producción 
+https://almundo-challenge.herokuapp.com/
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+### scrips de la aplicación
+```sh
+npm run start:server "Inicializa servidor de node"
+npm run start:client "Inicializa cliente web"
+npm run build:client "Gnenera archivos para producción aplicación web en la carpeta dist"
+build:server "Gnenera archivos para producción del servidor en la carpeta dist/server"
 
-## Running unit tests
+$ npm run build "ejecuta los comandos build:client y build:server"
+$ lint "verifica errores de linter ejecuta lint:client y lint:server"
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+License
+----
 
-## Running end-to-end tests
+MIT
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
