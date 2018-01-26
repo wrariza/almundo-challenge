@@ -1,6 +1,13 @@
-export class Filter{
+export class Filter{  nameHotel: string;
+
     constructor(
-        public name: string,
-        public stars: Array<any>,
+        public name:any,
+        public starts:Array<any>,
+        public all:boolean,
+        public five:boolean,
+        public four:boolean,
+        public three:boolean,
+        public two:boolean,
+        public one:boolean
     ){}
 }

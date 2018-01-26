@@ -23,7 +23,7 @@
                 <input 
                     type="text" ngModel 
                     class="filter-name-input" 
-                    name="nameHotel" 
+                    name="name" 
                     placeholder="{{MSG.filer_hotel_placeholder}}">
                 <button type="submit"  class="filter-name-button">Aceptar</button>
         </fieldset>
@@ -49,10 +49,14 @@
                 (change)="onChance(f)"
                 name="all" id="allStars" 
                 value="-1" 
+                [disabled]="disabled"
+                disabled
             />
             <label 
                 for="allStars" 
-                class="filter-start-label--allStars">Todas las estrellas</label>
+                class="filter-start-label--allStars">
+                {{ MSG.filter_allStars_label }}    
+            </label>
             <input 
                 type="checkbox" 
                 [(ngModel)]="statesStars.five" 

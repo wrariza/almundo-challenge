@@ -8,7 +8,6 @@ import { environment } from '../../../environments/environment';
 import { IHotels } from "../interfaces/hotels.interface";
 import { Hotel } from "../models/hotel.model";
 
-
 @Injectable()
 export class HotelsService implements IHotels {
   

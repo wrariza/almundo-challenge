@@ -1,17 +1,14 @@
 import { Injectable } from '@angular/core';
 import { Subject }    from 'rxjs/Subject';
-
+import { Filter } from '../models/filter.model';
 @Injectable()
 export class FilterService {
-  // Observable string sources
-  private filterSearch = new Subject<string>();  
+  private filterSearch = new Subject<Filter>();  
 
-  // Observable string streams
   search$ = this.filterSearch.asObservable();
 
-  // Service message commands
-  publishData(data: string) {
-    this.filterSearch.next(data);
+  publishData(filter: Filter) {
+    this.filterSearch.next(filter);
   }
 
 }

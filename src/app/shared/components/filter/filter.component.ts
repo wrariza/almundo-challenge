@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
 import { FilterService } from '../../services/filter.services';
+import { Filter } from '../../models/filter.model';
 
 @Component({
   selector: 'app-filter',
@@ -18,8 +19,10 @@ export class FilterComponent implements OnInit {
     'filer_hotel_placeholder': 'Ingrese el nombre del hotel',
     'filer_hotel_title': 'Nombre de hotel',
     'filer_stars_title': 'Estrellas',
+    'filter_allStars_label':'Todas las estrellas'
   }
 
+  public name;
   public statesStars = {
       five: false,
       four: false,
@@ -29,13 +32,13 @@ export class FilterComponent implements OnInit {
       all: true 
   }
   
+  
   constructor(private _filterServices: FilterService) {
     this._filterServices.search$.subscribe()
   }
 
   search(f:NgForm){
-    this._filterServices.publishData(f.value);
-    console.log(f.value); 
+      this._filterServices.publishData(f.value);
   }
  
   onChance( f:NgForm ) {  
@@ -45,6 +48,7 @@ export class FilterComponent implements OnInit {
       }else{
           f.form.controls.all.setValue(true);
       }
+      this.search(f);
   }
 
   closetAndOpenFilters(){
