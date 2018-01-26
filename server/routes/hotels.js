@@ -9,6 +9,7 @@ hotelsRouter.get('/hotels', (req, res) => {
   let data = []
   let query = req.query
   let name = query.name.toUpperCase();
+  console.log(typeof(name)) 
   let stars = String(query.stars).split(',');
 
   if(stars[0] !== "-1"){  
@@ -21,7 +22,7 @@ hotelsRouter.get('/hotels', (req, res) => {
     data = hotels;
   }
   
-  if(name !== ""){
+  if(name.length > 0){
     _.each(data, (hotel) => {
       console.log(_.includes(hotel.name.toUpperCase(), name));
       if ((_.includes(hotel.name.toUpperCase(), name) == true)) {
@@ -31,8 +32,10 @@ hotelsRouter.get('/hotels', (req, res) => {
   }
  
 
+  data = _.uniqBy(data, 'name')
+  data = _.orderBy(data, ['stars'], ['desc'])
 
-  res.status(200).json(_.orderBy(data, ['stars'], ['desc']))
+  res.status(200).json(data)
   res.end()
 })
 
