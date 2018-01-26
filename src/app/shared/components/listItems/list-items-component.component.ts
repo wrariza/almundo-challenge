@@ -44,8 +44,8 @@ export class ListItemsComponentComponent implements OnInit{
         filter.one ? this.starts.push(1) : '';
       }
       
-    let query = filter ? `?name="${filter.name}"&stars="${this.starts}"` :
-      `?name=""&stars="-1"`
+    let query = filter ? `?name=${filter.name}&stars=${this.starts}` :
+      `?name=&stars=-1`
     this.itemsServices
       .findHotels(query)
       .then((holtels: Hotel[]) => {
