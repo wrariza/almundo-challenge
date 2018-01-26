@@ -11,7 +11,7 @@ import { FilterService } from './shared/services/filter.services';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/components/header/header.component';
-import { ListItemsComponentComponent } from './shared/components/listItems/list-items-component.component';
+import { ListItemsComponentComponent } from './shared/components/listItems/list-items.component';
 import { FilterComponent } from './shared/components/filter/filter.component';
 import { StarComponent } from './shared/components/star/star.component';
 import { LoadingComponent } from './shared/components/loading/loading.component';

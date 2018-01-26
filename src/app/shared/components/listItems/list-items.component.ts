@@ -8,8 +8,8 @@ import { environment } from '../../../../environments/environment';
 
 @Component({
   selector: 'app-listItems',
-  templateUrl: './list-items-component.component.html',
-  styleUrls: ['./list-items-component.component.scss']
+  templateUrl: './list-items.component.html',
+  styleUrls: ['./list-items.component.scss']
 })
 
 export class ListItemsComponentComponent implements OnInit{
