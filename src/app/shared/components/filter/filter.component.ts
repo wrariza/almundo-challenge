@@ -48,6 +48,7 @@ export class FilterComponent implements OnInit {
       }else{
           f.form.controls.all.setValue(true);
       }
+
       this.search(f);
   }
 
